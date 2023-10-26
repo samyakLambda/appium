@@ -38,9 +38,9 @@ class JWProxy {
   /** @type {string} */
   scheme;
   /** @type {string} */
-  server;
+  // server;
   /** @type {number} */
-  port;
+  // port;
   /** @type {string} */
   base;
   /** @type {string} */
@@ -57,8 +57,8 @@ class JWProxy {
     // it to this._log (which lies behind the getter) further down
     const options = _.defaults(_.omit(opts, 'log'), {
       scheme: 'http',
-      server: 'localhost',
-      port: 4444,
+      _server: 'localhost',
+      _port: 4444,
       base: DEFAULT_BASE_PATH,
       reqBasePath: DEFAULT_BASE_PATH,
       sessionId: null,
@@ -82,6 +82,14 @@ class JWProxy {
 
   get log() {
     return this._log ?? DEFAULT_LOG;
+  }
+
+  set server (value) {
+    this._server = value;
+  }
+
+  set port (value) {
+    this._port = value;
   }
 
   /**
@@ -128,7 +136,7 @@ class JWProxy {
     if (url === '') {
       url = '/';
     }
-    const proxyBase = `${this.scheme}://${this.server}:${this.port}${this.base}`;
+    const proxyBase = `${this.scheme}://${this._server}:${this._port}${this.base}`;
     const endpointRe = '(/(session|status))';
     let remainingUrl = '';
     if (/^http/.test(url)) {
@@ -331,7 +339,7 @@ class JWProxy {
     if (!commandName) {
       return await this.proxy(url, method, body);
     }
-    this.log.debug(`Matched '${url}' to command name '${commandName}'`);
+    this.log.debug(`Matched '${url}' to command name '${commandName} body ${body}'`);
 
     return await this.protocolConverter.convertAndProxy(commandName, url, method, body);
   }
