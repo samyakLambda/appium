@@ -20,7 +20,7 @@
         "appium-mac-driver": "1.x",
         "appium-support": "2.x",
         "appium-tizen-driver": "^1.1.1-beta.4",
-        "appium-uiautomator2-driver": "^1.37.1",
+        "appium-uiautomator2-driver": "github:LambdatestIncPrivate/appium-uiautomator2-driver#appium-1.17.1",
         "appium-windows-driver": "1.x",
         "appium-xcuitest-driver": "^3.22.0",
         "appium-youiengine-driver": "^1.2.0",
@@ -2525,7 +2525,7 @@
     },
     "node_modules/appium-android-driver": {
       "version": "4.26.1",
-      "resolved": "git+ssh://git@github.com/LambdatestIncPrivate/appium-android-driver.git#2abf0f3958206ba6d3a0e4a536de04aa89fe04ca",
+      "resolved": "git+ssh://git@github.com/LambdatestIncPrivate/appium-android-driver.git#50143dd2b5bc81641272bfdbbb3a47d8a9a3987c",
       "engines": [
         "node"
       ],
@@ -2534,7 +2534,7 @@
         "@babel/runtime": "^7.0.0",
         "appium-adb": "^7.22.0",
         "appium-base-driver": "^5.1.0",
-        "appium-chromedriver": "^4.13.0",
+        "appium-chromedriver": "github:LambdatestIncPrivate/appium-chromedriver#appium-1.17.1",
         "appium-support": "^2.37.0",
         "asyncbox": "^2.0.4",
         "bluebird": "^3.4.7",
@@ -2589,12 +2589,12 @@
     },
     "node_modules/appium-chromedriver": {
       "version": "4.21.0",
-      "resolved": "https://registry.npmjs.org/appium-chromedriver/-/appium-chromedriver-4.21.0.tgz",
-      "integrity": "sha512-93LmpeC7sCqjHzMhk+1JR8VM9rNwLJ/mNWjjG26ngqfSY/xNn5fzq9ff+TUKXYVlyPqE64ODi+5UifKUZ9QZ7Q==",
+      "resolved": "git+ssh://git@github.com/LambdatestIncPrivate/appium-chromedriver.git#f54fa21f50019aab52cfc35d48cb0885f542f71d",
       "engines": [
         "node"
       ],
       "hasInstallScript": true,
+      "license": "Apache-2.0",
       "dependencies": {
         "@babel/runtime": "^7.0.0",
         "appium-base-driver": "^5.0.0",
@@ -4066,16 +4066,16 @@
       }
     },
     "node_modules/appium-uiautomator2-driver": {
-      "version": "1.44.2",
-      "resolved": "https://registry.npmjs.org/appium-uiautomator2-driver/-/appium-uiautomator2-driver-1.44.2.tgz",
-      "integrity": "sha512-xnfuQjXLjZP8XzUfTpnFk6nd6Qo5ixCLWK9wD10lPcmsYiqdHT8gSySaS5RglqYyCKC5mfQPwqKUMzSpCHKbig==",
+      "version": "1.44.1",
+      "resolved": "git+ssh://git@github.com/LambdatestIncPrivate/appium-uiautomator2-driver.git#6c18e10891e812856d1ed661875ec0f6748b7b93",
       "engines": [
         "node"
       ],
+      "license": "Apache-2.0",
       "dependencies": {
         "@babel/runtime": "^7.0.0",
         "appium-adb": "^7.20.0",
-        "appium-android-driver": "^4.25.0",
+        "appium-android-driver": "github:LambdatestIncPrivate/appium-android-driver#appium-1.17.1",
         "appium-base-driver": "^5.0.0",
         "appium-support": "^2.37.0",
         "appium-uiautomator2-server": "^4.4.0",
@@ -5803,30 +5803,34 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/abbrev": {
       "version": "1.1.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/ansi-regex": {
       "version": "2.1.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/aproba": {
       "version": "1.2.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/are-we-there-yet": {
       "version": "1.1.5",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "delegates": "^1.0.0",
         "readable-stream": "^2.0.6"
@@ -5834,15 +5838,17 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/balanced-match": {
       "version": "1.0.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/brace-expansion": {
       "version": "1.1.11",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "balanced-match": "^1.0.0",
         "concat-map": "0.0.1"
@@ -5850,66 +5856,75 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/chownr": {
       "version": "1.1.3",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/code-point-at": {
       "version": "1.1.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/concat-map": {
       "version": "0.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/console-control-strings": {
       "version": "1.1.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/core-util-is": {
       "version": "1.0.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/debug": {
       "version": "3.2.6",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "ms": "^2.1.1"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/deep-extend": {
       "version": "0.6.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=4.0.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/delegates": {
       "version": "1.0.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/detect-libc": {
       "version": "1.0.3",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "Apache-2.0",
+      "optional": true,
       "bin": {
         "detect-libc": "bin/detect-libc.js"
       },
@@ -5919,24 +5934,27 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/fs-minipass": {
       "version": "1.2.7",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "minipass": "^2.6.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/fs.realpath": {
       "version": "1.0.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/gauge": {
       "version": "2.7.4",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "aproba": "^1.0.3",
         "console-control-strings": "^1.0.0",
@@ -5950,9 +5968,10 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/glob": {
       "version": "7.1.6",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "fs.realpath": "^1.0.0",
         "inflight": "^1.0.4",
@@ -5970,15 +5989,17 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/has-unicode": {
       "version": "2.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/iconv-lite": {
       "version": "0.4.24",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "safer-buffer": ">= 2.1.2 < 3"
       },
@@ -5988,18 +6009,20 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/ignore-walk": {
       "version": "3.0.3",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "minimatch": "^3.0.4"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/inflight": {
       "version": "1.0.6",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "once": "^1.3.0",
         "wrappy": "1"
@@ -6007,24 +6030,27 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/inherits": {
       "version": "2.0.4",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/ini": {
       "version": "1.3.5",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "engines": {
         "node": "*"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/is-fullwidth-code-point": {
       "version": "1.0.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "number-is-nan": "^1.0.0"
       },
@@ -6034,15 +6060,17 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/isarray": {
       "version": "1.0.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/minimatch": {
       "version": "3.0.4",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "brace-expansion": "^1.1.7"
       },
@@ -6052,15 +6080,17 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/minimist": {
       "version": "0.0.8",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/minipass": {
       "version": "2.9.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "safe-buffer": "^5.1.2",
         "yallist": "^3.0.0"
@@ -6068,18 +6098,20 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/minizlib": {
       "version": "1.3.3",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "minipass": "^2.9.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/mkdirp": {
       "version": "0.5.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "minimist": "0.0.8"
       },
@@ -6089,15 +6121,17 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/ms": {
       "version": "2.1.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/needle": {
       "version": "2.4.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "debug": "^3.2.6",
         "iconv-lite": "^0.4.4",
@@ -6112,9 +6146,10 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/node-pre-gyp": {
       "version": "0.14.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "BSD-3-Clause",
+      "optional": true,
       "dependencies": {
         "detect-libc": "^1.0.2",
         "mkdirp": "^0.5.1",
@@ -6133,9 +6168,10 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/nopt": {
       "version": "4.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "abbrev": "1",
         "osenv": "^0.1.4"
@@ -6146,24 +6182,27 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/npm-bundled": {
       "version": "1.1.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "npm-normalize-package-bin": "^1.0.1"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/npm-normalize-package-bin": {
       "version": "1.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/npm-packlist": {
       "version": "1.4.7",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "ignore-walk": "^3.0.1",
         "npm-bundled": "^1.0.1"
@@ -6171,9 +6210,10 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/npmlog": {
       "version": "4.1.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "are-we-there-yet": "~1.1.2",
         "console-control-strings": "~1.1.0",
@@ -6183,54 +6223,60 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/number-is-nan": {
       "version": "1.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/object-assign": {
       "version": "4.1.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/once": {
       "version": "1.4.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "wrappy": "1"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/os-homedir": {
       "version": "1.0.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/os-tmpdir": {
       "version": "1.0.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/osenv": {
       "version": "0.1.5",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "os-homedir": "^1.0.0",
         "os-tmpdir": "^1.0.0"
@@ -6238,24 +6284,27 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/path-is-absolute": {
       "version": "1.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/process-nextick-args": {
       "version": "2.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/rc": {
       "version": "1.2.8",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "(BSD-2-Clause OR MIT OR Apache-2.0)",
+      "optional": true,
       "dependencies": {
         "deep-extend": "^0.6.0",
         "ini": "~1.3.0",
@@ -6268,15 +6317,17 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/rc/node_modules/minimist": {
       "version": "1.2.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/readable-stream": {
       "version": "2.3.6",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "core-util-is": "~1.0.0",
         "inherits": "~2.0.3",
@@ -6289,9 +6340,10 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/rimraf": {
       "version": "2.7.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "glob": "^7.1.3"
       },
@@ -6301,57 +6353,65 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/safe-buffer": {
       "version": "5.1.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/safer-buffer": {
       "version": "2.1.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/sax": {
       "version": "1.2.4",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/semver": {
       "version": "5.7.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "bin": {
         "semver": "bin/semver"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/set-blocking": {
       "version": "2.0.0",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/signal-exit": {
       "version": "3.0.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/string_decoder": {
       "version": "1.1.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "safe-buffer": "~5.1.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/string-width": {
       "version": "1.0.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "code-point-at": "^1.0.0",
         "is-fullwidth-code-point": "^1.0.0",
@@ -6363,9 +6423,10 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/strip-ansi": {
       "version": "3.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "dependencies": {
         "ansi-regex": "^2.0.0"
       },
@@ -6375,18 +6436,20 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/strip-json-comments": {
       "version": "2.0.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "MIT",
+      "optional": true,
       "engines": {
         "node": ">=0.10.0"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/tar": {
       "version": "4.4.13",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "chownr": "^1.1.1",
         "fs-minipass": "^1.2.5",
@@ -6402,30 +6465,34 @@
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/util-deprecate": {
       "version": "1.0.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "MIT"
+      "license": "MIT",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/wide-align": {
       "version": "1.1.3",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
       "license": "ISC",
+      "optional": true,
       "dependencies": {
         "string-width": "^1.0.2 || 2"
       }
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/wrappy": {
       "version": "1.0.2",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/fsevents/node_modules/yallist": {
       "version": "3.1.1",
-      "extraneous": true,
+      "dev": true,
       "inBundle": true,
-      "license": "ISC"
+      "license": "ISC",
+      "optional": true
     },
     "node_modules/chokidar/node_modules/glob-parent": {
       "version": "3.1.0",
@@ -20891,13 +20958,13 @@
       }
     },
     "appium-android-driver": {
-      "version": "git+ssh://git@github.com/LambdatestIncPrivate/appium-android-driver.git#2abf0f3958206ba6d3a0e4a536de04aa89fe04ca",
+      "version": "git+ssh://git@github.com/LambdatestIncPrivate/appium-android-driver.git#50143dd2b5bc81641272bfdbbb3a47d8a9a3987c",
       "from": "appium-android-driver@github:LambdatestIncPrivate/appium-android-driver#appium-1.17.1",
       "requires": {
         "@babel/runtime": "^7.0.0",
         "appium-adb": "^7.22.0",
         "appium-base-driver": "^5.1.0",
-        "appium-chromedriver": "^4.13.0",
+        "appium-chromedriver": "github:LambdatestIncPrivate/appium-chromedriver#appium-1.17.1",
         "appium-support": "^2.37.0",
         "asyncbox": "^2.0.4",
         "bluebird": "^3.4.7",
@@ -20948,9 +21015,8 @@
       }
     },
     "appium-chromedriver": {
-      "version": "4.21.0",
-      "resolved": "https://registry.npmjs.org/appium-chromedriver/-/appium-chromedriver-4.21.0.tgz",
-      "integrity": "sha512-93LmpeC7sCqjHzMhk+1JR8VM9rNwLJ/mNWjjG26ngqfSY/xNn5fzq9ff+TUKXYVlyPqE64ODi+5UifKUZ9QZ7Q==",
+      "version": "git+ssh://git@github.com/LambdatestIncPrivate/appium-chromedriver.git#f54fa21f50019aab52cfc35d48cb0885f542f71d",
+      "from": "appium-chromedriver@github:LambdatestIncPrivate/appium-chromedriver#appium-1.17.1",
       "requires": {
         "@babel/runtime": "^7.0.0",
         "appium-base-driver": "^5.0.0",
@@ -22191,13 +22257,12 @@
       }
     },
     "appium-uiautomator2-driver": {
-      "version": "1.44.2",
-      "resolved": "https://registry.npmjs.org/appium-uiautomator2-driver/-/appium-uiautomator2-driver-1.44.2.tgz",
-      "integrity": "sha512-xnfuQjXLjZP8XzUfTpnFk6nd6Qo5ixCLWK9wD10lPcmsYiqdHT8gSySaS5RglqYyCKC5mfQPwqKUMzSpCHKbig==",
+      "version": "git+ssh://git@github.com/LambdatestIncPrivate/appium-uiautomator2-driver.git#6c18e10891e812856d1ed661875ec0f6748b7b93",
+      "from": "appium-uiautomator2-driver@github:LambdatestIncPrivate/appium-uiautomator2-driver#appium-1.17.1",
       "requires": {
         "@babel/runtime": "^7.0.0",
         "appium-adb": "^7.20.0",
-        "appium-android-driver": "^4.25.0",
+        "appium-android-driver": "github:LambdatestIncPrivate/appium-android-driver#appium-1.17.1",
         "appium-base-driver": "^5.0.0",
         "appium-support": "^2.37.0",
         "appium-uiautomator2-server": "^4.4.0",
@@ -23630,22 +23695,26 @@
             "abbrev": {
               "version": "1.1.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "ansi-regex": {
               "version": "2.1.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "aproba": {
               "version": "1.2.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "are-we-there-yet": {
               "version": "1.1.5",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "delegates": "^1.0.0",
                 "readable-stream": "^2.0.6"
@@ -23654,12 +23723,14 @@
             "balanced-match": {
               "version": "1.0.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "brace-expansion": {
               "version": "1.1.11",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "balanced-match": "^1.0.0",
                 "concat-map": "0.0.1"
@@ -23668,32 +23739,38 @@
             "chownr": {
               "version": "1.1.3",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "code-point-at": {
               "version": "1.1.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "concat-map": {
               "version": "0.0.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "console-control-strings": {
               "version": "1.1.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "core-util-is": {
               "version": "1.0.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "debug": {
               "version": "3.2.6",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "ms": "^2.1.1"
               }
@@ -23701,22 +23778,26 @@
             "deep-extend": {
               "version": "0.6.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "delegates": {
               "version": "1.0.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "detect-libc": {
               "version": "1.0.3",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "fs-minipass": {
               "version": "1.2.7",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "minipass": "^2.6.0"
               }
@@ -23724,12 +23805,14 @@
             "fs.realpath": {
               "version": "1.0.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "gauge": {
               "version": "2.7.4",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "aproba": "^1.0.3",
                 "console-control-strings": "^1.0.0",
@@ -23744,7 +23827,8 @@
             "glob": {
               "version": "7.1.6",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "fs.realpath": "^1.0.0",
                 "inflight": "^1.0.4",
@@ -23757,12 +23841,14 @@
             "has-unicode": {
               "version": "2.0.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "iconv-lite": {
               "version": "0.4.24",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "safer-buffer": ">= 2.1.2 < 3"
               }
@@ -23770,7 +23856,8 @@
             "ignore-walk": {
               "version": "3.0.3",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "minimatch": "^3.0.4"
               }
@@ -23778,7 +23865,8 @@
             "inflight": {
               "version": "1.0.6",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "once": "^1.3.0",
                 "wrappy": "1"
@@ -23787,17 +23875,20 @@
             "inherits": {
               "version": "2.0.4",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "ini": {
               "version": "1.3.5",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "is-fullwidth-code-point": {
               "version": "1.0.0",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "number-is-nan": "^1.0.0"
               }
@@ -23805,12 +23896,14 @@
             "isarray": {
               "version": "1.0.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "minimatch": {
               "version": "3.0.4",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "brace-expansion": "^1.1.7"
               }
@@ -23818,12 +23911,14 @@
             "minimist": {
               "version": "0.0.8",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "minipass": {
               "version": "2.9.0",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "safe-buffer": "^5.1.2",
                 "yallist": "^3.0.0"
@@ -23832,7 +23927,8 @@
             "minizlib": {
               "version": "1.3.3",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "minipass": "^2.9.0"
               }
@@ -23840,7 +23936,8 @@
             "mkdirp": {
               "version": "0.5.1",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "minimist": "0.0.8"
               }
@@ -23848,12 +23945,14 @@
             "ms": {
               "version": "2.1.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "needle": {
               "version": "2.4.0",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "debug": "^3.2.6",
                 "iconv-lite": "^0.4.4",
@@ -23863,7 +23962,8 @@
             "node-pre-gyp": {
               "version": "0.14.0",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "detect-libc": "^1.0.2",
                 "mkdirp": "^0.5.1",
@@ -23880,7 +23980,8 @@
             "nopt": {
               "version": "4.0.1",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "abbrev": "1",
                 "osenv": "^0.1.4"
@@ -23889,7 +23990,8 @@
             "npm-bundled": {
               "version": "1.1.1",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "npm-normalize-package-bin": "^1.0.1"
               }
@@ -23897,12 +23999,14 @@
             "npm-normalize-package-bin": {
               "version": "1.0.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "npm-packlist": {
               "version": "1.4.7",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "ignore-walk": "^3.0.1",
                 "npm-bundled": "^1.0.1"
@@ -23911,7 +24015,8 @@
             "npmlog": {
               "version": "4.1.2",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "are-we-there-yet": "~1.1.2",
                 "console-control-strings": "~1.1.0",
@@ -23922,17 +24027,20 @@
             "number-is-nan": {
               "version": "1.0.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "object-assign": {
               "version": "4.1.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "once": {
               "version": "1.4.0",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "wrappy": "1"
               }
@@ -23940,17 +24048,20 @@
             "os-homedir": {
               "version": "1.0.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "os-tmpdir": {
               "version": "1.0.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "osenv": {
               "version": "0.1.5",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "os-homedir": "^1.0.0",
                 "os-tmpdir": "^1.0.0"
@@ -23959,17 +24070,20 @@
             "path-is-absolute": {
               "version": "1.0.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "process-nextick-args": {
               "version": "2.0.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "rc": {
               "version": "1.2.8",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "deep-extend": "^0.6.0",
                 "ini": "~1.3.0",
@@ -23980,14 +24094,16 @@
                 "minimist": {
                   "version": "1.2.0",
                   "bundled": true,
-                  "extraneous": true
+                  "dev": true,
+                  "optional": true
                 }
               }
             },
             "readable-stream": {
               "version": "2.3.6",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "core-util-is": "~1.0.0",
                 "inherits": "~2.0.3",
@@ -24001,7 +24117,8 @@
             "rimraf": {
               "version": "2.7.1",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "glob": "^7.1.3"
               }
@@ -24009,37 +24126,44 @@
             "safe-buffer": {
               "version": "5.1.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "safer-buffer": {
               "version": "2.1.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "sax": {
               "version": "1.2.4",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "semver": {
               "version": "5.7.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "set-blocking": {
               "version": "2.0.0",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "signal-exit": {
               "version": "3.0.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "string_decoder": {
               "version": "1.1.1",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "safe-buffer": "~5.1.0"
               }
@@ -24047,7 +24171,8 @@
             "string-width": {
               "version": "1.0.2",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "code-point-at": "^1.0.0",
                 "is-fullwidth-code-point": "^1.0.0",
@@ -24057,7 +24182,8 @@
             "strip-ansi": {
               "version": "3.0.1",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "ansi-regex": "^2.0.0"
               }
@@ -24065,12 +24191,14 @@
             "strip-json-comments": {
               "version": "2.0.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "tar": {
               "version": "4.4.13",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "chownr": "^1.1.1",
                 "fs-minipass": "^1.2.5",
@@ -24084,12 +24212,14 @@
             "util-deprecate": {
               "version": "1.0.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "wide-align": {
               "version": "1.1.3",
               "bundled": true,
-              "extraneous": true,
+              "dev": true,
+              "optional": true,
               "requires": {
                 "string-width": "^1.0.2 || 2"
               }
@@ -24097,12 +24227,14 @@
             "wrappy": {
               "version": "1.0.2",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             },
             "yallist": {
               "version": "3.1.1",
               "bundled": true,
-              "extraneous": true
+              "dev": true,
+              "optional": true
             }
           }
         },
